@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <title>Reflection Narrative Data Privacy and CyberSec</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            background-color: #8b8383;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        h2{
+            text-align: center;
+        }
+        
+        p{
+            text-align: center;
+            font-size: 15px;
+        }
+        .content {
+            border: 5px solid #531818;
+            border-radius: 5px;
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 80%;
+        }
+        
+        #logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div id="logo">
+            <img src="img/perplogo.png" width="300" height="300" alt="Logo">
+        </div>
+        <h2>Reflection Paper for the Data Privacy Awareness Campaign</h2>
+        <p>By Dion Andrei G. Quiamzon BSCS-DS 1st Year</p>
+        <py-script>
+            content = """
+            Attending the Data Privacy and Awareness Campaign was an enlightening experience that highlighted the importance of protecting personal information in today’s digital age. The campaign covered several key topics, including the features of two important laws: the Data Privacy Act (RA 10173) and the Cybercrime Prevention Act (RA 10175). One of the primary topics discussed was the importance of RA 10173, which ensures that personal information, whether collected online or offline, is handled properly and securely. The law gives individuals control over their personal information and mandates that organizations must ask for consent before collecting or using any personal data. The campaign also touched on Section 10 of RA 10175, which focuses on the responsibilities of service providers, ensuring that they cooperate with law enforcement agencies in tracking down cybercriminals when necessary. This law demonstrates the shared responsibility between the private sector and the government in fighting cybercrimes and protecting people from data breaches and misuse.<br><br>
+
+            Another significant topic discussed was the role of the Philippine National Police Anti-Cybercrime Group (PNP ACG) in enforcing these laws. The PNP ACG is responsible for investigating and arresting individuals involved in cybercrimes, ensuring that justice is served. The campaign delved into the specific punishable acts under RA 10175, which are detailed in Sections 4A, 4B, and 4C. Section 4A deals with crimes related to illegal access, hacking, and interference with computer systems, all of which can lead to serious issues like data theft or disruption of essential services. Section 4B addresses crimes related to identity theft, which can destroy individuals’ lives and reputations. Meanwhile, Section 4C focuses on content-related offenses, including cybersex, child pornography, and cyber libel, all of which have become major concerns in our increasingly online world. The discussions on these topics emphasized the broad scope of RA 10175 and how it aims to protect individuals and organizations from the growing threat of cybercrimes.<br><br>
+
+            The campaign also highlighted some of the most alarming cybercrimes, such as sextortion, identity theft, and the spread of malware, which can have devastating effects on victims. Sextortion, which involves criminals threatening to release compromising images or videos unless the victim complies with their demands, has become a widespread issue. This crime preys on individuals’ vulnerabilities and often leads to psychological and emotional harm. Similarly, identity theft, where criminals steal personal information to commit fraud, can cause significant financial and reputational damage to victims. Malware, a type of malicious software, was also discussed in detail. It is often used to infiltrate computers and steal sensitive information or damage systems. Section 6 of RA 10175 specifically addresses these crimes and provides stricter penalties when they are committed against critical systems, such as government databases or essential services. The campaign tackled the importance of taking preventive measures, such as being cautious when sharing personal information online, using strong passwords, and avoiding suspicious links or downloads.<br><br>
+
+            Overall, the Data Privacy and Awareness Campaign served as a reminder of the risks associated with living in a digital world. It made me realize that as users of technology, we have a responsibility to protect our own personal data and be vigilant against cybercriminals who seek to exploit our information. The knowledge gained from this campaign will help in making informed decisions about privacy and security on the internet. It emphasizes the need for a collective effort both from individuals and institutions to ensure that the internet remains a safe and secure space for everyone.<br><br>
+            """
+
+            # Display the content using innerHTML
+            output_element = Element("output")
+            output_element.element.innerHTML = content
+        </py-script>
+        <div id="output"></div>
+    </div>
+</body>
+</html>
